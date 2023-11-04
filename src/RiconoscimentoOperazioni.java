@@ -1,15 +1,15 @@
 public class RiconoscimentoOperazioni {
     public static String riconoscimentoOperazione(String str){
         if(str.contains("+")){
-            return "SOMMA";
+            return "Somma";
         } else if (str.contains("-")){
-            return "DIFFERENZA";
+            return "Sottrazione";
         } else if (str.contains("*")){
-            return "MOLTIPLICAZIONE";
+            return "Moltiplicazione";
         } else if (str.contains("/")){
-            return "DIVISIONE";
+            return "Divisione";
         } else if (str.contains("^")){
-            return "POTENZA";
+            return "Potenza";
         } else{
             return  "ingresso di operazione non riconosciuto";
         }
