@@ -11,7 +11,7 @@ public class RiconoscimentoOperazioni {
         } else if (str.contains("^")){
             return "Potenza";
         } else{
-            return  "ingresso di operazione non riconosciuto";
+            return  "Ingresso di operazione non riconosciuto";
         }
 
     }
