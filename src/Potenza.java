@@ -1,4 +1,4 @@
-public class Calcolatrice{
+public class Potenza{
  public static int calcolaPotenza(int base, int esponente) {
         int risultato = 1;
 
