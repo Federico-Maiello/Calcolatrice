@@ -13,9 +13,12 @@ public class Calcolatrice {
             System.out.println("Quoziente: " + quoziente);
             System.out.println("Resto: " + resto);
     }
+
+
+    }
         
 
-}
+
 
 
 
