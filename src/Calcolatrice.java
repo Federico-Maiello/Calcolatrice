@@ -1,7 +1,12 @@
 public class Calcolatrice {
     public static void main(String[] args) {
-        int risultatoAddizione = Addizione.funzioneAddizione(5, 3);
-        System.out.println("La somma è: " + risultatoAddizione);
+        Integer primoNumero = 5;
+        Integer secondoNumero = null;
+        char operazioneDaeseguire = '+';
+
+        String risultatoOperazione = RiconoscimentoOperazioni.riconoscimentoOperazione(operazioneDaeseguire, primoNumero, secondoNumero);
+        System.out.println(risultatoOperazione);
+
 
         int numero = 6;
         String risultatoPariDispari = PariDispari.checkPariDispari(numero);
@@ -12,8 +17,7 @@ public class Calcolatrice {
         System.out.println("La potenza è: " + risultatoPotenza);
 
         String operazione = "3 - 4";
-        String tipoOperazione = RiconoscimentoOperazioni.riconoscimentoOperazione(operazione);
-        System.out.println("Tipo di operazione: " + tipoOperazione);
+
 
         int risultatoSottrazione = Sottrazione.sottrazione(10, 4);
         System.out.println("La sottrazione è: " + risultatoSottrazione);

@@ -1,18 +1,35 @@
 public class RiconoscimentoOperazioni {
-    public static String riconoscimentoOperazione(String str){
-        if(str.contains("+")){
-            return "Somma";
-        } else if (str.contains("-")){
-            return "Sottrazione";
-        } else if (str.contains("*")){
-            return "Moltiplicazione";
-        } else if (str.contains("/")){
-            return "Divisione";
-        } else if (str.contains("^")){
-            return "Potenza";
-        } else{
-            return  "Ingresso di operazione non riconosciuto";
-        }
+    public static String riconoscimentoOperazione(char str, Integer primoNumero, Integer secondoNumero){
+         switch (str) {
+            case '+' -> {
+                if (Addizione.checkIfNumberIsertedarenotnull(primoNumero, secondoNumero)) {
+                    int risultatoAddizione = Addizione.funzioneAddizione(primoNumero, secondoNumero);
+                    String s = "La somma è: " + risultatoAddizione;
+                    return s;
+                }else{
+                    return "Errore!";
+                }
 
+            }
+            case '-' -> {
+                return "Sottrazione";
+            }
+            case '*' -> {
+                 return "Moltiplicazione";
+             }
+            case '/' -> {
+                 return "Divisione";
+             }
+            case '^' -> {
+                 return "Potenza";
+             }
+
+             case 'd' -> {
+                return PariDispari.checkPariDispari(primoNumero);
+             }
+            default -> {
+                 return "Ingresso di operazione non riconosciuto";
+             }
+        }
     }
 }
